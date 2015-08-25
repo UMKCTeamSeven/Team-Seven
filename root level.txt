@@ -1,1 +1,4 @@
 Everything grows from here down. 
+
+In progress files, things not ready to be merged, documentation in progress can be precommited here. 
+
