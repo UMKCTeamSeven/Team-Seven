@@ -2,7 +2,7 @@
 Root level
 
 https://desktop.github.com/ <---- A gui made by github, very easy to use and quick to learn. 
-I use it unless I have to use shell
+I use it unless I HAVE to use shell, if you like shell, more power to you.
 
 I've created and merged a branch, to see how the final work flow should look you can see it illustrated:
 https://github.com/UMKCTeamSeven/Team-Seven/network
