@@ -1,6 +1,10 @@
 # Team-Seven
 Root level
 
+If you haven't already go ahead and click watch on this repo, that way you will get email notifications for changes etc
+
+
+
 https://desktop.github.com/ <---- A gui made by github, very easy to use and quick to learn. 
 I use it unless I HAVE to use shell, if you like shell, more power to you.
 
