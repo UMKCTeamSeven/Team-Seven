@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6 -->
+<html class=" lang-en js no-touch postmessage csstransitions fontface" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/getpx.php"></script><script type="text/javascript" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/a59d48e8ab"></script><script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/getid.js"></script><script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/c2076-pixel.js"></script><meta name="ms.env" content="PROD"><script type="text/javascript" async="" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ms.js"></script><script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/nr-686.min.js"></script><script type="text/javascript" async="" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/bk-coretag.js"></script><script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/68286e4b3660aa4f21d21fbf07ef1165.js"></script><script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ae9a1969e113cf117901264bb04462c9.js"></script><script type="text/javascript" async="" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/f46139850a9d51d8e45d967c8c90bb46.js"></script><script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/serverComponent.php"></script>
+	
+	<title>What's New in C# 6.0 | Visual Studio 2015 Enterprise Videos | Channel 9</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"a59d48e8ab","applicationID":"2686449","transactionName":"Y1JUbUpTXBFZUUYPC1oYclZMfFcWe11cEhZbW1pcSh13DExAS0ktQFJb","queueTime":0,"applicationTime":292,"ttGuid":"2A5A840D3988E313","agent":"js-agent.newrelic.com/nr-686.min.js"}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcHVV9XGwEGXFdWAwg="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:20,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(3),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(4),t(5),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:8,3:3,4:7,5:6,6:21,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:22,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:22,ee:"QJf3ax"}],7:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:22,ee:"QJf3ax"}],8:[function(t,e){function n(){u.inPlace(this,p,"fn-")}function r(t,e){u.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),u=c(a),f=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,u.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:5,2:22,ee:"QJf3ax"}],9:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=n(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=n(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var f=0;c>f;f++)e.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:10,3:8,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],10:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],11:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:20,2:21,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===f.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=u.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,u=c.document;t(2);var f=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:f,features:{}};u.addEventListener?(u.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(u.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:20,2:11,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],20:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],21:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],22:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:21,ee:"QJf3ax"}]},{},["G9z0Bl",4,9]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Rev9">
+	<meta name="WT.z_bdb" content="1">
+    <meta name="C9ID" content="629849843c4944dfaade681b59dac7e4">
+    <meta name="MRCID" content=""><meta name="WT.signedin" content="0">
+
+	<meta name="msapplication-task" content="name=Coffeehouse;action-uri=/forums/coffeehouse;icon-uri=/favicon.ico">
+	<meta name="msapplication-task" content="name=Browse All Content;action-uri=/Browse;icon-uri=/favicon.ico">
+	<meta name="msapplication-task" content="name=Shows;action-uri=/Browse/Shows;icon-uri=/favicon.ico">
+		<meta name="application-name" content="Channel 9">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="msapplication-config" content="/browserconfig.xml"><meta name="msApplication-ID" content="App"> <!-- View Code on Win 8 app package.appxmanifest, <Application Id="App" StartPage="default.html"> -->
+<meta name="msApplication-PackageFamilyName" content="Microsoft.Channel9_8wekyb3d8bbwe">
+<link rel="apple-touch-icon" sizes="57x57" href="https://channel9.msdn.com/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://channel9.msdn.com/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://channel9.msdn.com/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://channel9.msdn.com/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://channel9.msdn.com/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://channel9.msdn.com/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://channel9.msdn.com/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://channel9.msdn.com/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://channel9.msdn.com/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://channel9.msdn.com/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://channel9.msdn.com/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="https://channel9.msdn.com/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://channel9.msdn.com/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://channel9.msdn.com/favicon-32x32.png" sizes="32x32">
+		<!--[if lte IE 8]>
+			<link href="https://s.ch9.ms/styles/site.css?v=u7aouJfnoQmYiC17RfQ6CFCdLgqSDBSIsft-EmLBE8U1" rel="stylesheet" type="text/css"/>
+		<![endif]-->
+		<!--[if gt IE 8]-->
+			<link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/siteR.css" rel="stylesheet" type="text/css">
+		<!--[endif]-->
+  <link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/print.css" media="print" rel="stylesheet" type="text/css">
+  <link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/handheld.css" media="handheld" rel="stylesheet" type="text/css">
+	<link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/rating.css" rel="stylesheet" type="text/css">
+		<link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/videoPlayerR.css" rel="stylesheet" type="text/css">
+  <link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/userComments.css" rel="stylesheet" type="text/css">
+  <link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/sourcecode.css" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	<link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/admin.css" rel="stylesheet" type="text/css">
+	<link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/comments.css" rel="stylesheet" type="text/css">
+		<link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/EntryPage.css" rel="stylesheet" type="text/css">
+	<link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/sh.css" rel="stylesheet" type="text/css">
+		
+
+	<link href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ch9lightbox.css" rel="stylesheet" type="text/css">
+	<meta property="og:title" content="What&#39;s New in C# 6.0 (Channel 9)">
+	<meta property="og:description" content="C# 6 adds a lot of small but useful language features to remove boilerplate and clean up your code. This video takes you on a whirlwind tour through all the new language constructs ">
+	<meta property="og:type" content="video">
+	<meta property="og:image" content="http://video.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_512.jpg">
+	<meta property="og:url" content="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6">
+	<meta property="og:site_name" content="Channel 9">
+		<meta property="og:video:width" content="512">
+		<meta property="og:video:height" content="288">
+      <meta property="og:video" content="http://video.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_mid.mp4">
+      <meta property="og:video:secure_url" content="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_mid.mp4">
+      <meta property="og:video:type" content="video/mp4">
+      <meta property="og:video" content="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6/player">
+      <meta property="og:video:secure_url" content="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6/player">
+      <meta property="og:video:type" content="text/html">
+
+  <meta name="twitter:card" content="player">
+  <meta name="twitter:site" content="@ch9">
+  <meta name="twitter:title" content="What&#39;s New in C# 6.0 (Channel 9)">
+  <meta name="twitter:description" content="C# 6 adds a lot of small but useful language features to remove boilerplate and clean up your code. This video takes you on a whirlwind tour through all the new language constructs ">
+  <meta name="twitter:image:src" content="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_960.jpg">
+  <meta name="twitter:player" content="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6/player">
+  <meta name="twitter:player:stream" content="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_mid.mp4">
+  <meta name="twitter:player:stream:content_type" content="video/mp4">
+  <meta name="twitter:player:height" content="288">
+  <meta name="twitter:player:width" content="512">  
+                        
+	<meta name="WT.entryid" content="Entry:WebView:39d9075368bd487d85bea4810164f98b">
+		<link type="image/jpeg" rel="videothumbnail" href="http://video.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_512.jpg">
+		<link rel="image_src" href="http://video.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_512.jpg">
+	<meta name="title" content="What&#39;s New in C# 6.0">
+	<meta name="Search.ID" content="39d90753-68bd-487d-85be-a4810164f98b">
+	<link rel="canonical" href="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9.html">
+	<link href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6/RSS" title="Comment Feed - What&#39;s New in C# 6.0" rel="alternate" type="application/rss+xml">
+	<meta name="description" content="C# 6 adds a lot of small but useful language features to remove boilerplate and clean up your code. This video takes you on a whirlwind tour through all the new language constructs ">
+	<meta name="keywords" content="C#">
+		<meta name="WT.cg_n" content="Series">
+		<meta name="WT.cg_s" content="Visual-Studio-2015-Enterprise-Videos">
+	<meta name="CommentCount" content="15">
+	<noscript>&lt;link href="https://s.ch9.ms/styles/noscript.css?v=IIA0aNgtCczjgwuh-DX_8nbVtGk1" rel="stylesheet" type="text/css"/&gt;</noscript>
+	<!--[if IE 9]><link href="https://s.ch9.ms/styles/ie9.css?v=IIA0aNgtCczjgwuh-DX_8nbVtGk1" rel="stylesheet" type="text/css"/><![endif]-->
+	<!--[if IE 8]><link href="https://s.ch9.ms/styles/ie8.css?v=IIA0aNgtCczjgwuh-DX_8nbVtGk1" rel="stylesheet" type="text/css"/><![endif]-->
+	<!--[if lt IE 8]><link href="https://s.ch9.ms/styles/ie7_6.css?v=IIA0aNgtCczjgwuh-DX_8nbVtGk1" rel="stylesheet" type="text/css"/><![endif]-->
+	<!--[if lt IE 7]><link href="https://s.ch9.ms/styles/ie6.css?v=IIA0aNgtCczjgwuh-DX_8nbVtGk1" rel="stylesheet" type="text/css"/><![endif]-->
+	<!--[if IEMobile 7]> <link href="https://s.ch9.ms/styles/ieMobile7.css?v=IIA0aNgtCczjgwuh-DX_8nbVtGk1" rel="stylesheet" type="text/css"/><![endif]-->
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/responsiveFix.js"></script><script>
+	if(!ch9){
+		var ch9={data:{},functions:{},value:{}};
+	}
+	ch9.value.CDNRoot='https://s.ch9.ms/';
+	ch9.value.rnd='IIA0aNgtCczjgwuh-DX_8nbVtGk1';
+</script>
+<!--[if lte IE 8]><script src="https://s.ch9.ms/scripts/global/iso8601parse.js?v=IIA0aNgtCczjgwuh-DX_8nbVtGk1"></script><![endif]-->
+
+		<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script>
+		ch9.data.culture = "en";
+	</script>
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/cldrSupplemental.js"></script>
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/cldrMain_en.js"></script>
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/localization.js"></script>
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/globals.js"></script>
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/en" type="text/javascript"></script>
+	<!--[if lt IE 7]><script>ch9.data.isIE6=true;</script><![endif]-->
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/videoplayer.js"></script>
+	
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/entry.js"></script>
+	
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ch9lightbox.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("a[rel='lightbox']").ch9lightbox({});
+		});
+	</script>
+		<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/Bootstrap.js"></script>
+<script id="twitter-wjs" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/widgets.js"></script><script id="facebook-jssdk" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/all.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow-x:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body class="hasTopBanner hasSidebar entry hasTopContent  " data-guid="39d90753-68bd-487d-85be-a4810164f98b">
+
+<div class="userUberInfoTemplate ch9Template">
+	<div class="userUberInfo rounded">
+
+		<div class="ch9 icon">
+			<a href="https://channel9.msdn.com/" title="Channel 9">
+				<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/9Guy_30x30.png" alt="Channel 9">
+			</a>
+		</div>
+		<div class="ch9 info data" style="display: none;">
+			<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#" class="profile"></a>
+			<p class="memberDate" style="display: none;"></p>
+			<p class="caption" style="display: none;"></p>
+			<p class="followus" title="Twitter" style="display: none;">
+				<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#"></a>
+			</p>
+			<p class="links" style="display: none;"></p>
+			<p class="bio" style="display: none;"></p>
+			<dl class="counts" style="display: none;">
+				<dt class="userEntries" style="display: none;">Entries:</dt>
+				<dd class="userEntries" style="display: none;">
+					<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#"></a>
+				</dd>
+				<dt class="userComments" style="display: none;">Comments:</dt>
+				<dd class="userComments" style="display: none;">
+					<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#"></a>
+				</dd>
+				<dt class="userPosts" style="display: none;">Discussions:</dt>
+				<dd class="userPosts" style="display: none;">
+					<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#"></a>
+				</dd>
+			</dl>
+		</div>
+		<div class="ch9 loading data">
+			<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ui-anim_basic_16x16.gif">
+			<p>Loading user information from Channel 9</p>
+		</div>
+		<div class="ch9 error data" style="display: none;">
+			<p class="alert">Something went wrong getting user information from Channel 9</p>
+		</div>
+
+		<div class="msdn icon">
+			<a href="http://www.msdn.com/" title="MSDN">
+				<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/msdn_60x16.png" alt="MSDN">
+			</a>
+		</div>
+		<div class="msdn info data" style="display: none;">
+			<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#" class="profile"></a>
+			<p class="links" style="display: none;">
+				<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#" class="threads">Activity</a>
+				<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#" class="profile">Profile</a>
+			</p>
+			<p class="points" style="display: none;"></p>
+			<ul class="achievements" style="display: none;">
+				<li class="gold" title="Gold" style="display: none;"><span></span></li>
+				<li class="silver" title="Silver" style="display: none;"><span></span></li>
+				<li class="bronze" title="Bronze" style="display: none;"><span></span></li>
+			</ul>
+			<div class="recentAchievement" style="display: none;">
+				<div>Latest Achievement:</div>
+				<div class="achievement">
+					<span></span>
+					<div></div>
+				</div>
+			</div>
+			<a class="website" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#" style="display: none;"></a>
+			<p class="company" href="#" style="display: none;"></p>
+			<p class="biography" style="display: none;"></p>
+
+		</div>
+		<div class="msdn loading data">
+			<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ui-anim_basic_16x16.gif">
+			<p>Loading user information from MSDN</p>
+		</div>
+		<div class="msdn error data" style="display: none;">
+			<p class="alert">Something went wrong getting user information from MSDN</p>
+		</div>
+
+		<div class="achievements icon">
+			<a href="https://channel9.msdn.com/achievements" title="Visual Studio Achievements">
+				<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/VSachievements_30x50.png" alt="Visual Studio Achievements">
+			</a>
+		</div>
+		<div class="achievements info data" style="display: none;">
+			<a href="" class="profile" style="display: none;">Visual Studio Achievements</a>
+			<p class="points" style="display: none;"></p>
+			<div class="latest" style="display: none;">
+				<span>Latest Achievement:</span>
+				<img src="">
+				<div class="description">
+					<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#"></a>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="achievements loading data">
+			<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ui-anim_basic_16x16.gif">
+			<p>Loading Visual Studio Achievements</p>
+		</div>
+		<div class="achievements error data" style="display: none;">
+			<p class="alert">Something went wrong getting the Visual Studio Achievements</p>
+		</div>
+
+	</div>
+</div>
+
+<div class="branding">
+	<div class="toolbar">
+		<div class="container">
+<ul>
+    <li class="followus"><a href="http://twitter.com/ch9" ms.pgarea="header" ms.cmpgrp="aux nav" ms.title="twitter" ms.cmpnm="aux nav: link list" ms.index="1" ms.cmptyp="link">Follow us @ch9</a></li>
+	<li class="subscribe site"><a href="https://channel9.msdn.com/Feeds/RSS" ms.pgarea="header" ms.cmpgrp="aux nav" ms.title="rss" ms.cmpnm="aux nav: link list" ms.index="1" ms.cmptyp="link">Subscribe to Channel 9</a></li>
+	<!--IE7 needs a return here-->
+		<li class="signIn"><a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1441425886&rver=6.7.6626.0&wp=MBI_SSL&wreply=https:%2F%2Fchannel9.msdn.com%2FSeries%2FVisual-Studio-2015-Enterprise-Videos%2FWhats-New-in-CSharp-6&id=47159" ms.pgarea="header" ms.cmpgrp="aux nav" ms.title="Sign In" ms.cmpnm="aux nav: link list" ms.index="1" ms.cmptyp="link">Sign In</a></li>
+</ul>
+		</div>
+	</div>
+	<div class="navigation">
+		<div class="container">
+				<div class="logo"><a href="https://channel9.msdn.com/" ms.pgarea="header" ms.cmpgrp="logo" ms.cmpnm="Channel 9" ms.title="Channel 9" ms.index="1" ms.cmptyp="image">Channel&nbsp;9</a></div>
+<div class="search bing">
+	<form action="https://channel9.msdn.com/Search" autocomplete="off" class="siteSearch">
+		<input type="text" class="text inactive" value="Search" name="term" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="upper search box" ms.title="upper search box" ms.index="5" ms.cmptyp="input">
+		<input class="theSubmit" type="submit" alt="Submit">
+	</form>
+</div>
+<ul class="mainNav aNav" role="navigation">
+	<li class="browse">
+		<a href="https://channel9.msdn.com/Browse" class="ch9_chMain" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Browse" ms.title="Browse" ms.index="1" ms.cmptyp="link">Browse</a>
+		<ul class="rounded ch9_chSub">
+			<li><a href="https://channel9.msdn.com/Browse/Tags" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Browse" ms.title="Browse: Tags" ms.index="1" ms.cmptyp="link">Tags</a></li>
+			<li><a href="https://channel9.msdn.com/Browse/Shows" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Browse" ms.title="Browse: Shows" ms.index="1" ms.cmptyp="link">Shows</a></li>
+			<li><a href="https://channel9.msdn.com/Browse/Series" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Browse" ms.title="Browse: Series" ms.index="1" ms.cmptyp="link">Series</a></li>
+			<li><a href="https://channel9.msdn.com/Browse/Blogs" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Browse" ms.title="Browse: Blogs" ms.index="1" ms.cmptyp="link">Blogs</a></li>
+			<li><a href="https://channel9.msdn.com/Browse/Authors" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Browse" ms.title="Browse: Authors" ms.index="1" ms.cmptyp="link">Authors</a></li>
+			<li><a href="https://channel9.msdn.com/Browse/Events" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Browse" ms.title="Browse: Events" ms.index="1" ms.cmptyp="link">Events</a></li>
+		</ul>
+	</li>
+	<li class="topics">
+		<span class="ch9_chMain likeAlink">Topics</span>
+		<ul class="rounded ch9_chSub">
+			<li><a href="https://channel9.msdn.com/coding4fun" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Topics" ms.title="Topics: Coding4Fun" ms.index="2" ms.cmptyp="link">Coding<span>4</span>Fun</a></li>
+			<li><a href="https://channel9.msdn.com/Windows" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Topics" ms.title="Topics: Windows" ms.index="2" ms.cmptyp="link">Windows</a></li>
+			<li><a href="https://channel9.msdn.com/Azure" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Topics" ms.title="Topics: Azure" ms.index="2" ms.cmptyp="link">Azure</a></li>
+			<li><a href="https://channel9.msdn.com/VisualStudio" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Topics" ms.title="Topics: Visual Studio" ms.index="2" ms.cmptyp="link">Visual Studio</a></li>
+		</ul>
+	</li>
+	<li class="forums">
+		<a href="https://channel9.msdn.com/Forums" class="ch9_chMain" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Forums" ms.title="Forums" ms.index="3" ms.cmptyp="link">Forums</a>
+		<ul class="rounded ch9_chSub">
+			<li><a href="https://channel9.msdn.com/Forums/Coffeehouse" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Forums" ms.title="Forums: Coffeehouse" ms.index="3" ms.cmptyp="link">Coffeehouse</a></li>
+			<li><a href="https://channel9.msdn.com/Forums/Feedback" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Forums" ms.title="Forums: Site Feedback" ms.index="3" ms.cmptyp="link">Site Feedback</a></li>
+			<li><a href="https://channel9.msdn.com/Forums/TechOff" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Forums" ms.title="Forums: Tech Off" ms.index="3" ms.cmptyp="link">Tech Off</a></li>
+			<li><a href="https://channel9.msdn.com/Forums/Build" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Forums" ms.title="Forums: Build" ms.index="3" ms.cmptyp="link">Build</a></li>
+			<li><a href="https://channel9.msdn.com/Forums/MicrosoftIgnite" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Forums" ms.title="Forums: Microsoft Ignite" ms.index="3" ms.cmptyp="link">Microsoft Ignite</a></li>
+			<li><a href="https://channel9.msdn.com/Forums/TechEdEU" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Forums" ms.title="Forums: TechEd Europe" ms.index="3" ms.cmptyp="link">TechEd Europe</a></li>
+		</ul>
+	</li>
+	<li class="events">
+		<a href="https://channel9.msdn.com/Events" class="ch9_chMain" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Events" ms.title="Events" ms.index="4" ms.cmptyp="link">Events</a>
+		<ul class="rounded ch9_chSub">
+			<li><a href="https://channel9.msdn.com/Events/WinHEC/2015" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Events" ms.title="Events: WinHEC" ms.index="4" ms.cmptyp="link">WinHEC</a></li>
+			<li><a href="https://channel9.msdn.com/Events/Visual-Studio" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Events" ms.title="Events: Visual Studio" ms.index="4" ms.cmptyp="link">Visual Studio</a></li>
+			<li><a href="https://channel9.msdn.com/Events/TechEd" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Events" ms.title="Events: TechEd" ms.index="4" ms.cmptyp="link">TechEd</a></li>
+			<li><a href="https://channel9.msdn.com/Events/Build" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Events" ms.title="Events: Build" ms.index="4" ms.cmptyp="link">Build</a></li>
+			<li><a href="https://channel9.msdn.com/Events/Ignite" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Events" ms.title="Events: Microsoft Ignite" ms.index="4" ms.cmptyp="link">Microsoft Ignite</a></li>
+			<li><a href="https://channel9.msdn.com/Events/Microsoft-Azure" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Events" ms.title="Events: Azure" ms.index="4" ms.cmptyp="link">Azure</a></li>
+			<li><a href="https://channel9.msdn.com/Events/Speakers" ms.pgarea="header" ms.cmpgrp="main nav" ms.cmpnm="Events" ms.title="Events: Speakers" ms.index="4" ms.cmptyp="link">Speakers</a></li>
+		</ul>
+	</li>
+</ul>
+		</div>
+	</div>
+
+
+</div>
+
+<div class="firstContent text">
+	
+	<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos" class="area-page">
+		<picture>
+			<source media="(max-width: 959px)" srcset="https://s.ch9.ms/styles/images/1998/shim.gif">
+			<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/fed4a052-2b9f-41d8-ba2c-90b99f3fe19a.png">
+		</picture>
+	</a>
+	<div class="breadcrumbs"><ul><li class="first"><a href="https://channel9.msdn.com/Browse/Series">Series</a></li><li class="last"><a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos">Visual Studio 2015 Enterprise&nbsp;Videos</a></li></ul></div>
+	<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos" class="area-page_small">
+		<picture>
+			<source media="(min-width: 960px)" srcset="https://s.ch9.ms/styles/images/1998/shim.gif">
+			<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/f5d74d38-b1ac-4116-ab7e-16152a875752.png" class="smallLogo">
+		</picture>
+	</a>
+	<div class="entry">
+		<div class="entry-header item-header">
+			<h1>What's New in C#&nbsp;6.0</h1>
+			<ul class="entry-data item-data">
+				<li class="date">
+						Posted: Apr 29, 2015 at 10:50AM
+				</li>
+				<li class="author">
+					By:
+						<a href="https://channel9.msdn.com/Niners/lank">Lan Kaim</a>,
+						<a href="https://channel9.msdn.com/Niners/adbors">adbors</a>
+				</li>
+				<li class="rating">
+<div class="rating">
+	<div class="rating-average">
+			<fieldset>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+			</fieldset>
+	<div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: 0px;">0.25</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -4px;">0.5</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -8px;">0.75</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -12px;">1</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: 0px;">1.25</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -4px;">1.5</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -8px;">1.75</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -12px;">2</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: 0px;">2.25</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -4px;">2.5</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -8px;">2.75</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -12px;">3</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: 0px;">3.25</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -4px;">3.5</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -8px;">3.75</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -12px;">4</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: 0px;">4.25</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -4px;">4.5</a></div><div class="ui-stars-star ui-stars-star-on ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -8px;">4.75</a></div><div class="ui-stars-star ui-stars-star-disabled" style="width: 4px;"><a title="" style="margin-left: -12px;">5</a></div><input type="hidden" name="" value="4.75" disabled="disabled"></div>
+	<p class="avg-rating">Average: 4.75</p>
+</div>
+<div class="rating-count">(16)</div>
+
+				</li>
+				<li class="views">
+					<span class="count">24,272</span> views
+				</li>
+				<li class="comments">
+					<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#comments"><span class="count">16</span> comments
+					</a>
+				</li>
+				<li class="sharelinks">
+
+
+	
+
+
+
+
+	<div class="redditHolder" data-href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6" data-title="What&#39;s New in C# 6.0 (Channel 9)" data-target="programming">
+		<div class="sharingPositioner">
+			<a href="http://www.reddit.com/r/programming/submit?url=https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6&title=What%27s%20New%20in%20C# 6.0 (Channel 9)" class="redditButton" target="_blank" ms.pgarea="body" ms.cmpgrp="feature" ms.cmpnm="social share" ms.title="social share: reddit" ms.index="3" ms.cmptyp="share">reddit</a>
+		</div>
+	</div>
+
+
+
+	<div class="twitterHolder">
+		<div class="sharingPositioner">
+			<iframe id="twitter-widget-i1441425888624956196" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/tweet_button.420281f7dd393a35b17552fb11b499a9.en.html" style="position: static; visibility: visible; width: 81px; height: 20px;" data-url="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6"></iframe>
+		</div>
+	</div>
+
+	<div class="facebookLikeHolder">
+		<div class="sharingPositioner">
+			<div class="fb-like fb_iframe_widget" data-href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="arial" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;font=arial&amp;href=https%3A%2F%2Fchannel9.msdn.com%2FSeries%2FVisual-Studio-2015-Enterprise-Videos%2FWhats-New-in-CSharp-6&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: bottom; width: 79px; height: 20px;"><iframe name="f1cea7094" width="90px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/like.html" style="border: none; visibility: visible; width: 79px; height: 20px;" class=""></iframe></span></div>
+		</div>
+	</div>
+
+
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+
+<div class="playerContainer" style="">
+	<a class="video" style="background-image:url(https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_960.jpg);" href="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_high.mp4" title="Click to Play" data-user="{
+			&quot;isLoggedIn&quot;: &quot;False&quot;,
+			&quot;c9Id&quot;: &quot;629849843c4944dfaade681b59dac7e4&quot;,
+      &quot;mrcId&quot;: &quot;&quot;
+		}" data-player="{
+			&quot;playerPreference&quot;: &quot;auto&quot;,
+			&quot;language&quot;: &quot;en&quot;,
+			&quot;isSecure&quot;: &quot;True&quot;
+		}" data-episode="{
+			&quot;contentId&quot;: &quot;39d90753-68bd-487d-85be-a4810164f98b&quot;,
+			&quot;length&quot;: &quot;00:07:49&quot;,
+			&quot;api&quot;: &quot;/Entries(guid&#39;39d90753-68bd-487d-85be-a4810164f98b&#39;)/&quot;,
+			&quot;relatedApi&quot;: &quot;/Related?id=39d90753-68bd-487d-85be-a4810164f98b&quot;,
+			&quot;isMVA&quot;: &quot;False&quot;
+		}" ms.pgarea="video player" ms.cmpgrp="What&#39;s New in C# 6.0:controls" ms.cmpnm="play" ms.title="start video" ms.cmptyp="button" ms.index="1">
+		<div class="playButtonImage"></div>
+		<div class="entry-caption">
+			7 minutes, 49 seconds
+		</div>
+	</a>
+	<div class="playerGoesHere"></div>
+<ul class="progressive mediaformat">
+	
+	<li>
+		<a rel="Mp4Med" href="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_mid.mp4"></a>
+	</li>
+</ul>
+<ul class="html5 mediaformat">
+	
+	<li>
+		<a rel="Mp4" href="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6.mp4"></a>
+	</li>
+	<li>
+		<a rel="WebM" href="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6.webm"></a>
+	</li>
+	<li>
+		<a rel="Mp4High" href="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_high.mp4"></a>
+	</li>
+	<li>
+		<a rel="Mp4Med" href="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_mid.mp4"></a>
+	</li>
+</ul>
+<ul class="flash mediaformat">
+	
+	<li>
+		<a rel="Mp4Med" href="https://sec.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_mid.mp4"></a>
+	</li>
+</ul>
+
+</div>
+
+
+<div class="video-options">
+	<ul>
+		<li class="rounded">
+			<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#formats" class="formats" data-selectedformat="auto">
+				<span class="icon">&nbsp;</span> format
+			</a>
+		</li>
+		<li class="rounded">
+			<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#embed" class="embed">
+				<span class="icon">&lt;&nbsp;&gt;</span> embed
+			</a>
+		</li>
+		<li class="rounded queue-form">
+			<form id="manage-queue" method="POST" action="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#" data-addtoqueueurl="/post/39d90753-68bd-487d-85be-a4810164f98b/AddToQueue" data-removefromqueueurl="/post/39d90753-68bd-487d-85be-a4810164f98b/RemoveFromQueue">
+				<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#" class="queue">
+						<span class="add icon">+</span>
+					queue
+				</a>
+			</form>
+			<div class="queue-login alert info hidden">
+				<p><a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1441425886&rver=6.7.6626.0&wp=MBI_SSL&wreply=https:%2F%2Fchannel9.msdn.com%2FSeries%2FVisual-Studio-2015-Enterprise-Videos%2FWhats-New-in-CSharp-6&id=47159">Sign In</a> first to access your queue.</p>
+				<a class="close" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">Close</a>
+			</div>
+			<div class="queue-error alert info hidden">
+				<p>Sorry, video was not added to the queue, an error occurred. Please <a href="https://channel9.msdn.com/ContactUs">Contact Us</a> and let us know.</p>
+				<a class="close" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">Close</a>
+			</div>
+		</li>
+	</ul>
+	<div class="overlay">
+		<a class="close" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">Close</a>
+		<div class="overlay-content"></div>
+	</div>
+</div>
+		<div class="downloadsAndEvals">
+
+	<div id="video-download">
+		<div class="helpHolder">
+			<h3>Download</h3>
+			<div class="help">
+				<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/bg-help.gif">
+				<div class="popup rounded">
+					<h3>How do I download the videos?</h3>
+					<ul><li>To download, right click the file type you would like and pick “Save target as…” or “Save link as…”</li></ul>
+					
+					<h3>Why should I download videos from Channel9?</h3>
+					<ul><li>It's an easy way to save the videos you like locally.</li><li>You can save the videos in order to watch them offline.</li><li>If all you want is to hear the audio, you can download the MP3!</li></ul>
+					
+					<h3>Which version should I choose?</h3>
+					<ul><li>If you want to view the video on your PC, Xbox or Media Center, download the High Quality MP4 file (this is the highest quality version we have available).</li><li>If you'd like a lower bitrate version, to reduce the download time or cost, then choose the Medium Quality MP4 file.</li><li>If you have a Windows Phone, iPhone, iPad, or Android device, choose the low or medium MP4 file.</li><li>If you just want to hear the audio of the video, choose the MP3 file.</li></ul>
+				</div>
+			</div>
+			<p class="note">Right click “Save as…”</p>
+		</div>
+		<ul class="download">
+				<li>
+					
+			<div class="help">
+				<a href="http://video.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6.mp3">MP3</a> <span class="usage">(Audio only)</span>
+				<div class="popup rounded">
+					<h3>File size</h3>
+					7.2 MB
+				</div>
+			</div>
+				</li>
+				<li>
+					
+			<div class="help">
+				<a href="http://video.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6.mp4">Low Quality MP4</a> <span class="usage">(approx. 500-800kbps)</span>
+				<div class="popup rounded">
+					<h3>File size</h3>
+					16.3 MB
+				</div>
+			</div>
+				</li>
+				<li>
+					
+			<div class="help">
+				<a href="http://video.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_high.mp4">High Quality MP4</a> <span class="usage">(best available)</span>
+				<div class="popup rounded">
+					<h3>File size</h3>
+					63.9 MB
+				</div>
+			</div>
+				</li>
+				<li>
+					
+			<div class="help">
+				<a href="http://video.ch9.ms/ch9/a2c1/e78a06b8-25d4-41e9-9299-9e089797a2c1/WhatsNewinCSharp6_mid.mp4">Mid Quality MP4</a> <span class="usage">(approx. 2-2.5Mbps)</span>
+				<div class="popup rounded">
+					<h3>File size</h3>
+					44.9 MB
+				</div>
+			</div>
+				</li>
+		</ul>
+	</div>
+
+		</div>
+	
+</div>
+<div class="mainHolder">
+	<div class="mainContent text">
+			
+
+
+
+
+
+<div class="entry">
+	<div class="entry-content">
+		<div id="entry-body">
+			<p><span class="TextRun SCX131508737"><span class="FindHit SCX131508737">C</span><span class="NormalTextRun SCX131508737"># </span><span class="FindHit SCX131508737">6</span><span class="NormalTextRun SCX131508737"> adds a lot of small but useful language features to remove boilerplate and </span><span class="FindHit SCX131508737">c</span><span class="NormalTextRun SCX131508737">lean up your </span><span class="FindHit SCX131508737">c</span><span class="NormalTextRun SCX131508737">ode. This video takes you on a whirlw</span><span class="FindHit SCX131508737">in</span><span class="NormalTextRun SCX131508737">d tour through all the </span><span class="FindHit SCX131508737">new</span><span class="NormalTextRun SCX131508737"> language </span><span class="FindHit SCX131508737">c</span><span class="NormalTextRun SCX131508737">onstru</span><span class="FindHit SCX131508737">c</span><span class="NormalTextRun SCX131508737">ts</span></span></p>
+		</div>
+	</div>
+	<div id="entry-tags">
+		<h3>Tag:</h3>
+		<ul>
+			<li>
+				<a href="https://channel9.msdn.com/Tags/csharp">C#</a>
+			</li>
+		</ul>
+	</div>
+<div class="comments followDiscussion">
+	<a name="comments"></a>
+	<div class="comments-header">
+		<h2>Follow the discussion</h2>
+		<ul class="rss">
+
+<li class="followHolder state_initializing" data-follow_type="entry">
+	<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#" class="follow ch9_chMain" data-ch_hover_mq="(min-width: 960px)"><span>Follow</span></a>
+	<div class="rounded followTypes ch9_chSub screenReader">
+		<div class="followStates">
+			<div class="error">
+				<p>Oops, something didn't work.</p>
+			</div>
+
+			<div class="tryAgain">
+				<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">Try again</a>?
+			</div>
+
+			<div class="signIn">
+					<a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1441425886&rver=6.7.6626.0&wp=MBI_SSL&wreply=https:%2F%2Fchannel9.msdn.com%2FSeries%2FVisual-Studio-2015-Enterprise-Videos%2FWhats-New-in-CSharp-6&id=47159">Sign In</a> to begin to follow these comments
+				<div class="help">
+					<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/bg-help.gif" class="ch9_chMain" data-ch_hover_mq="(min-width: 960px)">
+						<div class="popup rounded ch9_chSub screenReader">
+							<h3>What does this mean?</h3>
+							Following an item on Channel 9 allows you to watch for new content and comments that you are interested in. You need to be signed in to Channel 9 to use this feature.
+						</div>
+					</div>
+			</div>
+
+			<div class="gettingInformation">
+				Getting "follow" information<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ellipsis.gif" alt="">
+			</div>
+
+			<div class="stopWatching">
+				<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">
+					Stop following these comments
+				</a>
+			</div>
+
+			<div class="startWatching">
+				<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">
+					Start following these comments
+				</a>
+				<div class="help">
+					<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/bg-help.gif" class="ch9_chMain" data-ch_hover_mq="(min-width: 960px)">
+						<div class="popup rounded ch9_chSub screenReader">
+							<h3>What does this mean?</h3>
+							Following an item on Channel 9 allows you to watch for new content and comments that you are interested in and view them all on <a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">your notifications page</a>
+						</div>
+					</div>
+			</div>
+
+			<div class="removingFollow">
+				Removing your "follow"<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ellipsis.gif" alt="">
+			</div>
+
+			<div class="settingUpFollow">
+				Setting up your "follow"<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ellipsis.gif" alt="">
+			</div>
+
+			<div class="signUp">
+				Did you know you can<br><a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">sign up</a> for email notifications?
+			</div>
+
+			<div class="manage">
+			</div>
+
+		</div>
+		<div class="rssHolder">
+			<ul class="feeds">
+				<li>
+					<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6/RSS">
+							Subscribe to these comments
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</li>
+		</ul>
+	</div>
+		<ul class="posts">
+				<li data-author="Manikanta">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;Manikanta&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<span><img alt="Manikanta" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/7179a817a105218ce0f66e7882b709f8-s=100&d=https%3a%2f%2fsec.ch9.ms%2fcontent%2fdefa.png" title="Manikanta"><span class="name">Manikanta</span></span>
+</div>
+
+<div class="post" id="c635660714982321351">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635660714982321351" title="Comment Permalink">May 01, 2015 at&nbsp;3:04AM</a>
+	</div>
+	<div class="post-content">
+			<p>when u guys will upload course vedios for C# 6.0 and .net 2015 for beginners   ??</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="alevykh">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;alevykh&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<a class="button" href="https://channel9.msdn.com/Niners/alevykh"><img alt="alevykh" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/default.gif" title="alevykh"><span class="name">alevykh</span></a>
+</div>
+
+<div class="post" id="c635666902093792861">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635666902093792861" title="Comment Permalink">May 08, 2015 at&nbsp;6:56AM</a>
+	</div>
+	<div class="post-content">
+			<p>Hmm.. Very fast speaking. For non-English users (like me) very hard to understand of&nbsp;speech.</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="JohnBr">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;JohnBr&quot;,&quot;MSDNId&quot;:&quot;93600ffa-76cb-4c1d-a404-bfc2f1f27ced&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<a class="button" href="https://channel9.msdn.com/Niners/JohnBr"><img alt="JohnBr" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/default.gif" title="JohnBr"><span class="name">JohnBr</span></a>
+</div>
+
+<div class="post" id="c635730150991309295">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635730150991309295" title="Comment Permalink">Jul 20, 2015 at&nbsp;11:51AM</a>
+	</div>
+	<div class="post-content">
+			<p>On the other hand, I liked this fast version.<br>C# 6 in under 8 minutes, so I could see it immediately.</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="Niner97672">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;Niner97672&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<a class="button" href="https://channel9.msdn.com/Niners/Niner97672"><img alt="Niner97672" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/default.gif" title="Niner97672"><span class="name">Niner97672</span></a>
+</div>
+
+<div class="post" id="c635731318489237358">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635731318489237358" title="Comment Permalink">Jul 21, 2015 at&nbsp;8:17PM</a>
+	</div>
+	<div class="post-content">
+			<p>fantasy,but i cannot understand what he say (～￣▽￣)→))*￣▽￣*)o</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="eduardobr">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;eduardobr&quot;,&quot;MSDNId&quot;:&quot;a2ee79ab-8901-4618-a9ae-782f73fc7472&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<a class="button" href="https://channel9.msdn.com/Niners/eduardobr"><img alt="eduardobr" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/default.gif" title="eduardobr"><span class="name">eduardobr</span></a>
+</div>
+
+<div class="post" id="c635731828732608890">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635731828732608890" title="Comment Permalink">Jul 22, 2015 at&nbsp;10:27AM</a>
+	</div>
+	<div class="post-content">
+			<p>"In current C#, auto properties must have setters".</p><p>That's not&nbsp;true. I guess you might be talking about the code generated by the compiler that now is different (?)</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="Secret V">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;Secret V&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<span><img alt="Secret V" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/c4758c11bcf653c2ddc094e0d9001f39-s=100&d=https%3a%2f%2fsec.ch9.ms%2fcontent%2fdefa.png" title="Secret V"><span class="name">Secret V</span></span>
+</div>
+
+<div class="post" id="c635732388797917311">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635732388797917311" title="Comment Permalink">Jul 23, 2015 at&nbsp;2:01AM</a>
+	</div>
+	<div class="post-content">
+			<p>Brilliant stuff. I really like the new read-only properties and the ?. operator (been waiting for that one for a while now!)!</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="Azarien">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;Azarien&quot;,&quot;MSDNId&quot;:&quot;ac02a82a-bd08-4bb3-b662-ffb4252d592f&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<a class="button" href="https://channel9.msdn.com/Niners/Azarien"><img alt="Azarien" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/default.gif" title="Azarien"><span class="name">Azarien</span></a>
+</div>
+
+<div class="post" id="c635732558187225978">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635732558187225978" title="Comment Permalink">Jul 23, 2015 at&nbsp;6:43AM</a>
+	</div>
+	<div class="post-content">
+			<p>I'm not a native English speaker and I understood every word he said.</p><p>By the way, the ?. operator seems not to work in VS2015 RTM.</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="Anders">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;Anders&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<span><img alt="Anders" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/9df23dc79a77be0c2e708738a1cce3da-s=100&d=https%3a%2f%2fsec.ch9.ms%2fcontent%2fdefa.png" title="Anders"><span class="name">Anders</span></span>
+</div>
+
+<div class="post" id="c635732646813828475">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635732646813828475" title="Comment Permalink">Jul 23, 2015 at&nbsp;9:11AM</a>
+	</div>
+	<div class="post-content">
+			<p>@eduardobr:<br><br>Load up VS2013 and try the following: object test { get; }<br>You will get a compile time error stating that auto properties must define both get and set accessors.</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="LloydFromOz">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;LloydFromOz&quot;,&quot;MSDNId&quot;:&quot;c54c84d9-c8e3-4247-b1fd-8af31539d028&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<a class="button" href="https://channel9.msdn.com/Niners/LloydFromOz"><img alt="Lloyd Conrade" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/default.gif" title="Lloyd Conrade"><span class="name">LloydFromOz</span></a>
+		<span class="caption">Technology to&nbsp;Innovate!!</span>
+</div>
+
+<div class="post" id="c635733040885611746">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635733040885611746" title="Comment Permalink">Jul 23, 2015 at&nbsp;8:08PM</a>
+	</div>
+	<div class="post-content">
+			<p>Brilliant simplifications!!</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="JacekS">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;JacekS&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<span><img alt="JacekS" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/3fafdfabb9f26dd4a2229a57de982133-s=100&d=https%3a%2f%2fsec.ch9.ms%2fcontent%2fdefa.png" title="JacekS"><span class="name">JacekS</span></span>
+</div>
+
+<div class="post" id="c635733619962813735">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635733619962813735" title="Comment Permalink">Jul 24, 2015 at&nbsp;12:13PM</a>
+	</div>
+	<div class="post-content">
+			<p>Good job, but I didn't get the puprose of "when" in "catch", can anyone exlain that?</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="Rynas">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;Rynas&quot;,&quot;MSDNId&quot;:&quot;2670c515-5d32-4a8d-9402-6d381cc199cb&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<a class="button" href="https://channel9.msdn.com/Niners/Rynas"><img alt="Rynas" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/b59ca493-85de-4955-a91b-a42abdc32bd7.jpg" title="Rynas"><span class="name">Rynas</span></a>
+</div>
+
+<div class="post" id="c635733639182908508">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635733639182908508" title="Comment Permalink">Jul 24, 2015 at&nbsp;12:45PM</a>
+	</div>
+	<div class="post-content">
+			<p>@<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635733619962813735">JacekS</a>: Chect here:&nbsp;<a href="https://msdn.microsoft.com/en-us/library/0yd65esw.aspx">https://msdn.microsoft.com/en-us/library/0yd65esw.aspx</a></p><p>&nbsp;</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="Aryan Mann">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;Aryan Mann&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<span><img alt="Aryan Mann" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/27a587b3738e362dc9ad5282f836b0f3-s=100&d=https%3a%2f%2fsec.ch9.ms%2fcontent%2fdefa.png" title="Aryan Mann"><span class="name">Aryan Mann</span></span>
+</div>
+
+<div class="post" id="c635744780481247031">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635744780481247031" title="Comment Permalink">Aug 06, 2015 at&nbsp;10:14AM</a>
+	</div>
+	<div class="post-content">
+			<p>Oh god the null conditional operator is one of those things that I wouldn't be able to live without now.</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="hugues tamo">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;hugues tamo&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<span><img alt="hugues tamo" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ea274ec0c16b5596bf67f609b795fe3e-s=100&d=https%3a%2f%2fsec.ch9.ms%2fcontent%2fdefa.png" title="hugues tamo"><span class="name">hugues tamo</span></span>
+</div>
+
+<div class="post" id="c635749112082706458">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635749112082706458" title="Comment Permalink">Aug 11, 2015 at&nbsp;10:33AM</a>
+	</div>
+	<div class="post-content">
+			<p>Oh my god is really cool </p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="mkofler">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;mkofler&quot;,&quot;MSDNId&quot;:&quot;2cf1bfdb-d3b2-4097-af4e-f3d374b76094&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<a class="button" href="https://channel9.msdn.com/Niners/mkofler"><img alt="Markus Kofler" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/d7a163a8-3224-4f52-8540-a21697e3ec9c.jpg" title="Markus Kofler"><span class="name">mkofler</span></a>
+		<span class="caption">Markus&nbsp;Kofler</span>
+</div>
+
+<div class="post" id="c635751663938201944">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635751663938201944" title="Comment Permalink">Aug 14, 2015 at&nbsp;9:26AM</a>
+	</div>
+	<div class="post-content">
+			<p>Great improvements! Love it!</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="Paul885">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;Paul885&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<a class="button" href="https://channel9.msdn.com/Niners/Paul885"><img alt="Paul885" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/default.gif" title="Paul885"><span class="name">Paul885</span></a>
+</div>
+
+<div class="post" id="c635759498468606999">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635759498468606999" title="Comment Permalink">Aug 23, 2015 at&nbsp;11:04AM</a>
+	</div>
+	<div class="post-content">
+			<p>Download instructions do not work in Edge - there is no "Save as..." option.</p>
+	</div>
+</div>
+
+
+				</li>
+				<li data-author="Jasmin Akther Suma">
+
+<div class="author hasUberInfo" data-uberinfo_mq="(min-width: 960px)" data-uberinfo="{&quot;userName&quot;:&quot;Jasmin Akther Suma&quot;,&quot;MSDNId&quot;:&quot;&quot;,&quot;hasAchievements&quot;:false,&quot;isSelf&quot;:false}">
+		<span><img alt="Jasmin Akther Suma" class="avatar" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/0a70c8cc76c48164517b583db70ba7c6-s=100&d=https%3a%2f%2fsec.ch9.ms%2fcontent%2fdefa.png" title="Jasmin Akther Suma"><span class="name">Jasmin Akther Suma</span></span>
+</div>
+
+<div class="post" id="c635766129364963730">
+	<div class="post-header">
+		<a class="permalink" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#c635766129364963730" title="Comment Permalink">4 days&nbsp;ago</a>
+	</div>
+	<div class="post-content">
+			<p>Liked it too much...very fast presentation of some excellent good features...coding is being fun day by day using c#...love it...:-)</p>
+	</div>
+</div>
+
+
+				</li>
+		</ul>
+<div id="adminRemoveComment" class="text">
+	<h2 class="removeThisComment">Remove this comment</h2>
+	<h2 class="removeThisThread">Remove this thread</h2>
+	<div class="message alert"></div>
+	<form method="POST" action="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">
+		
+		<dl>
+			<dt>
+				<input type="radio" name="reason" value="Spam" id="deleteCommentReasonSpam" checked="checked">
+			</dt>
+			<dd>
+				<label for="deleteCommentReasonSpam">Spam</label>
+			</dd>
+			<dt>
+				<input type="radio" name="reason" value="guidlines" id="deleteCommentReasonGuidlines">
+			</dt>
+			<dd>
+				<label for="deleteCommentReasonGuidlines">Violates C9 guidelines</label>
+			</dd>
+			<dt>
+				<input type="radio" name="reason" value="language" id="deleteCommentLanguage">
+			</dt>
+			<dd>
+				<label for="deleteCommentLanguage">Foul language</label>
+			</dd>
+			<dt>
+				<input type="radio" name="reason" value="attack" id="deleteCommentPersonalAttack">
+			</dt>
+			<dd>
+				<label for="deleteCommentPersonalAttack">Personal attacks</label>
+			</dd>
+		</dl>
+		<input type="submit" value="Remove comment" class="submit removeThisComment">
+		<input type="submit" value="Remove thread" class="submit removeThisThread">
+	</form>
+	<a class="close" href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/Whats-New-in-CSharp-6#">Close</a>
+</div>
+
+
+
+
+</div>
+
+
+<div class="comments add-comment">
+			<div class="comments-header">
+				<h2>Comment on the post</h2>
+			</div>
+			<div class="goSignIn">
+				<p><strong>Already have a Channel 9 account?</strong> Please <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1441425886&rver=6.7.6626.0&wp=MBI_SSL&wreply=https:%2F%2Fchannel9.msdn.com%2FSeries%2FVisual-Studio-2015-Enterprise-Videos%2FWhats-New-in-CSharp-6&id=47159">sign in</a></p>
+			</div>
+			<form method="post" id="commentState" class="commentform" autocomplete="off" novalidate="novalidate">
+				<div class="validation-summary-valid" id="validationSummary"><ul><li style="display:none"></li>
+</ul></div>
+				<fieldset>
+					<ol>
+						<li class="subject">
+							<span class="field-validation-valid" id="CommentState_Subject_validationMessage"></span>
+							<label for="CommentState_Subject">Are you human? If so, leave this field blank.</label>
+							<input id="CommentState_Subject" name="CommentState.Subject" type="text" value="">
+						</li>
+							<li>
+								<span class="field-validation-valid" id="CommentState_AnonymousUser_DisplayName_validationMessage"></span>
+								<label for="CommentState_AnonymousUser_DisplayName">Name</label>
+								<input id="CommentState_AnonymousUser_DisplayName" name="CommentState.AnonymousUser.DisplayName" type="text" value="">
+							</li>
+							<li>
+								<span class="field-validation-valid" id="CommentState_AnonymousUser_Email_validationMessage"></span>
+								<label for="CommentState_AnonymousUser_Email">Email</label>
+								<input id="CommentState_AnonymousUser_Email" name="CommentState.AnonymousUser.Email" type="text" value="">
+							</li>
+						<li class="textarea">
+								<span class="field-validation-valid" id="CommentState_AnonymousBody_validationMessage"></span>
+								<label for="CommentState_AnonymousBody">Comment</label>
+								<textarea cols="100" id="CommentState_AnonymousBody" name="CommentState.AnonymousBody" rows="10"></textarea>
+						</li>
+					</ol>
+				</fieldset>
+				
+				<p class="submit">
+					<input type="submit" value="Comment">
+				</p>
+			</form><script type="text/javascript">
+//<![CDATA[
+if (!window.mvcClientValidationMetadata) { window.mvcClientValidationMetadata = []; }
+window.mvcClientValidationMetadata.push({"Fields":[{"FieldName":"CommentState.Subject","ReplaceValidationMessageContents":true,"ValidationMessageId":"CommentState_Subject_validationMessage","ValidationRules":[]},{"FieldName":"CommentState.AnonymousUser.DisplayName","ReplaceValidationMessageContents":true,"ValidationMessageId":"CommentState_AnonymousUser_DisplayName_validationMessage","ValidationRules":[{"ErrorMessage":"Name is required","ValidationParameters":{},"ValidationType":"required"},{"ErrorMessage":"Please enter a name with only letters, numbers, and spaces","ValidationParameters":{"pattern":"[A-Za-z0-9][A-Za-z 0-9]+[A-Za-z0-9]"},"ValidationType":"regex"}]},{"FieldName":"CommentState.AnonymousUser.Email","ReplaceValidationMessageContents":true,"ValidationMessageId":"CommentState_AnonymousUser_Email_validationMessage","ValidationRules":[{"ErrorMessage":"Email address is required","ValidationParameters":{},"ValidationType":"required"},{"ErrorMessage":"The field Email does not match the data format EmailAddress","ValidationParameters":{},"ValidationType":"email"}]},{"FieldName":"CommentState.AnonymousBody","ReplaceValidationMessageContents":true,"ValidationMessageId":"CommentState_AnonymousBody_validationMessage","ValidationRules":[]}],"FormId":"commentState","ReplaceValidationSummary":true,"ValidationSummaryId":"validationSummary"});
+//]]>
+</script>
+</div>
+
+</div>
+	</div>
+
+	<div class="pageNavHolder">
+	</div>
+
+	<div class="sidebarHolder">	
+	<div class="sidebar">
+			<div class="related series">
+				<h2>
+						More parts in this series 
+				</h2>
+<ul>
+	<li>
+			<strong>
+	<img class="thumb" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/WhatsNewinCSharp6_100.jpg" alt="What&#39;s New in C# 6.0">
+	<span class="title">What's New in C# 6.0</span></strong>
+	</li>
+</ul>
+
+				<p class="more">
+					<a href="https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos">
+						See more…
+					</a>
+				</p>
+			</div>
+			<div class="related">
+				<h2>Related episodes</h2>
+<ul>
+	<li>
+        <a href="https://channel9.msdn.com/Blogs/Technology-and-Friends/Episode-381-Danny-Warren-on-Cortana?ocid=relatedentry">
+	<img class="thumb" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/tf381_100.jpg" alt="Episode 381: Danny Warren on Cortana">
+	<span class="title">Episode 381: Danny Warren on Cortana</span></a>
+
+	</li>
+	<li>
+        <a href="https://channel9.msdn.com/Blogs/raw-tech/Lets-Create-Custom-Inspector-in-Unity?ocid=relatedentry">
+	<img class="thumb" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/unitycustominspector_100.jpg" alt="Let&#39;s Create - Custom Inspector in Unity">
+	<span class="title">Let's Create - Custom Inspector in Unity</span></a>
+
+	</li>
+	<li>
+        <a href="https://channel9.msdn.com/Blogs/raw-tech/Raycasting-in-Unity?ocid=relatedentry">
+	<img class="thumb" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/UnityRaycast_100.jpg" alt="Raycasting in Unity">
+	<span class="title">Raycasting in Unity</span></a>
+
+	</li>
+	<li>
+        <a href="https://channel9.msdn.com/coding4fun/blog/Winning-with-Win2D?ocid=relatedentry">
+	<img class="thumb" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/a6bf7c29-d323-4b24-a371-97aeab2ba5bf.png" alt="Winning with Win2D">
+	<span class="title">Winning with Win2D</span></a>
+
+	</li>
+</ul>
+
+				<a class="azureMLLink" target="_blank" href="http://azure.com/ml">
+					Powered by Azure Machine Learning
+				</a>
+			</div>
+	</div>	
+	</div>
+</div>
+<div class="footer">
+	<div class="container"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" class="ccl" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="copyright" ms.title="copyright" ms.index="1" ms.cmptyp="image">
+	<img src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/somerights20.png" alt="">
+</a>
+<p class="copyright">
+	© 2015 Microsoft. <a href="https://channel9.msdn.com/info" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="copyright" ms.title="copyright" ms.index="1" ms.cmptyp="link">Except where designated</a> as licensed by<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="copyright" ms.title="copyright" ms.index="1" ms.cmptyp="link">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 License</a>,<br>Microsoft reserves all rights associated with the materials on this site.<br>
+</p>
+<ul class="footerNav">
+	<li class="subscribe site"><a href="https://channel9.msdn.com/Feeds/RSS" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="base footer: link list" ms.title="rss" ms.index="2" ms.cmptyp="link">Subscribe to Channel 9</a></li>
+	<li class="followus"><a href="http://twitter.com/ch9" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="base footer: link list" ms.title="twitter" ms.index="2" ms.cmptyp="link">Follow us @ch9</a></li>
+	<li class="feedback"><a href="https://channel9.msdn.com/Forums/Feedback" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="base footer: link list" ms.title="Feedback" ms.index="2" ms.cmptyp="link">Feedback</a></li>
+	<li class="locale"><a href="https://channel9.msdn.com/localization/chrome?returnUrl=%252fSeries%252fVisual-Studio-2015-Enterprise-Videos%252fWhats-New-in-CSharp-6" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="base footer: link list" ms.title="English" ms.index="2" ms.cmptyp="link">English</a></li>
+	<li class="privacy"><a href="http://www.microsoft.com/privacystatement/en-us/Channel9App/Default.aspx" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="base footer: link list" ms.title="Privacy Statement" ms.index="2" ms.cmptyp="link">Privacy Statement</a></li>
+	<li class="termsofuse"><a href="http://go.microsoft.com/?linkid=4412892" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="base footer: link list" ms.title="Terms of Service" ms.index="2" ms.cmptyp="link">Terms of Service</a></li>
+	<li class="codeofconduct"><a href="https://channel9.msdn.com/CodeOfConduct" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="base footer: link list" ms.title="Code of Conduct" ms.index="2" ms.cmptyp="link">Code of Conduct</a></li>
+	<li class="contactus"><a href="https://channel9.msdn.com/ContactUs" ms.pgarea="footer" ms.cmpgrp="base footer" ms.cmpnm="base footer: link list" ms.title="Contact Us" ms.index="2" ms.cmptyp="link">Contact Us</a></li>
+</ul>
+
+	</div>
+</div>
+  <script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/jqueryUI-core_widget.js"></script>
+  <script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/ratings.js"></script>
+  <script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/userComments.js"></script>
+  <script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/markDirty.js"></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	<script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/removeComment.js"></script>
+  <script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/tiny_mce_loader.js"></script>
+  <script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/validation.js"></script>
+  <script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/syntaxhighlighter.js"></script><!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved. -->
+
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<script type="text/javascript">
+var _tag=new WebTrends();
+_tag.dcsid="dcs1wotjh10000w0irc493s0e_6x1g";
+_tag.fpcdom=".channel9.msdn.com";
+_tag.dcsGetId();
+_tag.trackevents=true;
+
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+_tag.dcsCollect();
+</script><div id="_ensDiv" style="display: none;"><script src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/wtid.js" type="text/javascript"></script><iframe id="_msnFrame" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/c.gif" style="z-index:-1;height:1px;width:1px;display:none;visibility:hidden;"></iframe></div>
+  <noscript>
+    &lt;div&gt;
+      &lt;img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="https://m.webtrends.com/dcs1wotjh10000w0irc493s0e_6x1g/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No&amp;amp;WT.tv=MS.3.0.0"/&gt;
+    &lt;/div&gt;
+  </noscript>
+<!-- END OF SmartSource Data Collector TAG -->
+
+  <!-- Host Location: North Central US -->
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1" id="fb_xdm_frame_https" src="./What's New in C# 6.0 _ Visual Studio 2015 Enterprise Videos _ Channel 9_files/44OwK74u0Ie.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><iframe name="__bkframe" src="javascript:void(0)" height="0" width="0" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" style="display: none;"></iframe></body></html>
