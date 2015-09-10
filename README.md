@@ -30,8 +30,8 @@ as you go through these steps you can refersh this page after each sync complete
 Try this workflow out :   
 
 (If you have a different prefered workflow, go for it, that way I can see what it looks like) 
-
-create a branch
+GIT GUI               VSgitGUI
+create a branch       (In VS 1. enter repo, 2. right click master branch, 3. select "new local branch from..." option)
 
 add file to branch
 
