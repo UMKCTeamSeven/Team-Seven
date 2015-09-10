@@ -1,5 +1,9 @@
 # Team-Seven
 Root level
+Note, only Professor Burris and us 6 team members have permissions to see from root up.
+
+I'm opening up OmniChess to the class. 
+Going to try to brainstorm stories. 
 
 Required for project!! 
 http://www.microsoft.com/en-us/download/details.aspx?id=29062 SQL 2012 express
